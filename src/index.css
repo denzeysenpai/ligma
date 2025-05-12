@@ -1,3 +1,52 @@
 :root {
-  
+  --light-green: #55efc4;
+  --light-cyan: #81ecec;
+  --light-gray: #dfe6e9;
+  --dark-gray: #2d3436;
+  --green: #00b894;
+  --cyan: #00cec9;
+  --grid-color: #3f484b7c;
+
+  --main-font: "Open Sans", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+
+  --font-size-2000: 0.9rem;
+  --font-size-1440: 0.8rem;
+  --font-size-1280: 0.7rem;
+  --font-size-768: 0.55rem;
+  --font-size-480: 0.5rem;
+
+  --font-size-2000-header: 2rem;
+  --font-size-1440-header: 1.8rem;
+  --font-size-1280-header: 1.6rem;
+  --font-size-768-header: 1.5rem;
+  --font-size-480-header: 1.4rem;
+
+  --gutter-padding: 1rem;
+  --round-reg: 1rem;
+  --round-medium: 0.8rem;
+  --round-small: 0.6rem;
+  --round-xsmall: 0.4rem;
+
+  --shadow-no-offset: 0 0 10px rgba(0, 0, 0, 0.2);
+  --shadow-sm-offset: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  --shadow-m-offset: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  --shadow-l-offset: 6px 6px 10px rgba(0, 0, 0, 0.2);
+
+  --responsive-width-2000: 2000px;
+  --responsive-width-1440: 1440px;
+  --responsive-width-1280: 1280px;
+  --responsive-width-768: 768px;
+  --responsive-width-480: 480px;
+}
+
+
+* {
+  font-family: var(--main-font);
+}
+
+.grid-background {
+  background: #333;
+  background-image: linear-gradient(var(--grid-color) .1em, transparent .1em), linear-gradient(90deg, var(--grid-color) .1em, transparent .1em);
+  background-size: 2em 2em;
 }

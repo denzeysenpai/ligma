@@ -1,21 +1,26 @@
 
-
-
+// import { useState } from "react";
+import "./Login.css"
+import showPassword from "../../lib/assets/login/pass-is-hidden.png";
 
 function Login() {
   return (
-    <div className="login-page">
-      <h1>Login</h1>
+    <div className="login-page grid-background">
       <form>
-        <div>
-          <label htmlFor="username">Username:</label>
-          <input type="text" id="username" name="username" required />
+      <h1>Login</h1>
+        <div className="row">
+          <input type="text" id="username" name="username" required placeholder="Username"/>
         </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" name="password" required />
+        <div className="row">
+          <input type="password" id="password" name="password" required placeholder="Password"/>
+          <button className="absolute">
+            <img src={showPassword} alt="" />
+          </button>
         </div>
-        <button type="submit">Login</button>
+        <div className="row">
+            <button type="submit">Login</button>
+            <button type="button">Create a new Account</button>
+        </div>
       </form>
     </div>
   );
