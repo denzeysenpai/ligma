@@ -1,0 +1,58 @@
+[
+    {
+        "id": "UID-00001",
+        "name": "John Doe",
+        "userName": "johndoe",
+        "passWord": "password",
+        "boards": [
+            {
+                "id":"BID-00001"
+            },
+            {
+                "id":"BID-00002"
+            },
+            {
+                "id":"BID-00003"
+            }
+        ],
+        "dateJoined": "2023-10-01",
+        "recents": [
+            {
+                "id":"BID-00001"
+            },
+            {
+                "id":"BID-00002"
+            }
+        ],
+        "starred": [
+            {
+                "id":"BID-00002"
+            }
+        ]
+    },
+    {
+        "id": "UID-00002",
+        "name": "Jane Doe",
+        "userName": "janedoe",
+        "passWord": "password",
+        "boards": [
+            {
+                "id":"BID-00001"
+            }
+        ],
+        "dateJoined": "2023-10-01",
+        "recents": [
+            {
+                "id":"BID-00001"
+            },
+            {
+                "id":"BID-00002"
+            }
+        ],
+        "starred": [
+            {
+                "id":"BID-00002"
+            }
+        ]
+    }
+]

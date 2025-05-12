@@ -1,0 +1,123 @@
+[
+    {
+        "id": "BID-00001",
+        "name": "Board 1",
+        "description": "This is the first board",
+        "createdBy": "UID-00001",
+        "createdAt": "2023-10-01",
+        "updatedAt": "2023-10-01",
+        "members": [
+            {
+                "id": "UID-00001",
+                "role": "admin"
+            },
+            {
+                "id": "UID-00002",
+                "role": "member"
+            }
+        ],
+        "lists": [
+            {
+                "id": "LID-00001",
+                "name": "To Do",
+                "cards": [
+                    {
+                        "id": "CID-00001",
+                        "title": "Task 1",
+                        "description": "This is the first task",
+                        "dueDate": "2023-10-05",
+                        "labels": ["urgent", "work"],
+                        "comments": [
+                            {
+                                "id": "CID-00001-CID-00001",
+                                "text": "This is a comment",
+                                "createdBy": "UID-00002",
+                                "createdAt": "2023-10-02"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "LID-00002",
+                "name": "Completed",
+                "cards": [
+                    {
+                        "id": "CID-00002",
+                        "title": "Task 2",
+                        "description": "This is the second task",
+                        "dueDate": "2023-10-05",
+                        "labels": ["urgent", "work"],
+                        "comments": [
+                            {
+                                "id": "LID-00002-CID-00002",
+                                "text": "This is a comment",
+                                "createdBy": "UID-00002",
+                                "createdAt": "2023-10-02"
+                            }
+                        ]
+                    }
+                ]
+            }
+
+        ]
+    },
+    {
+        "id": "BID-00002",
+        "name": "Board 2",
+        "description": "This is the second board",
+        "createdBy": "UID-00002",
+        "createdAt": "2023-10-01",
+        "updatedAt": "2023-10-01",
+        "members": [
+            {
+                "id": "UID-00002",
+                "role": "admin"
+            }
+        ],
+        "lists": [
+            {
+                "id": "LID-00001",
+                "name": "To Do",
+                "cards": [
+                    {
+                        "id": "CID-00001",
+                        "title": "Task 1",
+                        "description": "This is the first task",
+                        "dueDate": "2023-10-05",
+                        "labels": ["urgent", "work"],
+                        "comments": [
+                            {
+                                "id": "CID-00001-CID-00001",
+                                "text": "This is a comment",
+                                "createdBy": "UID-00002",
+                                "createdAt": "2023-10-02"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "LID-00002",
+                "name": "Completed",
+                "cards": [
+                    {
+                        "id": "CID-00002",
+                        "title": "Task 2",
+                        "description": "This is the second task",
+                        "dueDate": "2023-10-05",
+                        "labels": ["urgent", "work"],
+                        "comments": [
+                            {
+                                "id": "LID-00002-CID-00002",
+                                "text": "This is a comment",
+                                "createdBy": "UID-00002",
+                                "createdAt": "2023-10-02"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
