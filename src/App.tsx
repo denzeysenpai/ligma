@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  Login  from "./pages/login-page/Login";
 function App() {
-  const logged_in = false;
+  const logged_in = !false;
 
 
   if (logged_in) {
@@ -10,8 +10,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/authenticated" element={<h1>Home</h1>}>
-            <Route path="/about" element={<h1>About</h1>}/>
-            <Route path="/contact" element={<h1>Contact</h1>}/>
+            <Route index element={<h1>About</h1>}/>
+            <Route path="contact" element={<h1>Contact</h1>}/>
           </Route>
         </Routes>
       </BrowserRouter>
