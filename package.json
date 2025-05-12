@@ -9,10 +9,16 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "author": {
+    "name": "Mark Josh Solante",
+    "email": "solantemark.workmail@gmail.com",
+    "url": "https://github.com/denzeysenpai"
+  },
   "dependencies": {
     "ligma": "file:",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
