@@ -1,0 +1,33 @@
+
+
+
+.dashboard-page {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    
+    .row {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+
+    .block {
+        background-color: #0e1214d5;
+        padding: 20px 30px;
+    }
+
+    .right-box {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+        max-width: 500px;
+    }
+
+    .seventy-auto-bento-columm {
+        display: grid;
+        grid-template-columns: 70% auto;
+        gap: 1rem;
+    }
+
+}
