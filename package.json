@@ -15,6 +15,8 @@
     "url": "https://github.com/denzeysenpai"
   },
   "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
+    "firebase": "^11.7.1",
     "ligma": "file:",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
