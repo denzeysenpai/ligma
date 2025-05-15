@@ -20,6 +20,11 @@ const notebooks = [
     { id: 3, name: "Notebook 3", img: ligmaLogo }
 ]
 
+const organizations = [
+    { id: 1, name: "Organization 1", img: ligmaLogo },
+    { id: 2, name: "Organization 2", img: ligmaLogo },
+]
+
 function GetRecents() {
     return recents.map((recent) => (
         <Link to={`/authenticated/project?id=${recent.id}`} className="link">
@@ -27,6 +32,27 @@ function GetRecents() {
             <span>
             {recent.name}
             </span>
+            <button className="settings">
+                <span className="circles"></span>
+                <span className="circles"></span>
+                <span className="circles"></span>
+            </button>
+        </Link>
+    ))
+}
+
+function GetOrganizations() {
+    return organizations.map((recent) => (
+        <Link to={`/authenticated/organization?id=${recent.id}`} className="link">
+            <img src={recent.img} alt="img" />
+            <span>
+            {recent.name}
+            </span>
+            <button className="settings">
+                <span className="circles"></span>
+                <span className="circles"></span>
+                <span className="circles"></span>
+            </button>
         </Link>
     ))
 }
@@ -38,6 +64,11 @@ function GetNotebooks() {
             <span>
             {recent.name}
             </span>
+            <button className="settings">
+                <span className="circles"></span>
+                <span className="circles"></span>
+                <span className="circles"></span>
+            </button>
         </Link>
     ))
 }
@@ -86,6 +117,8 @@ function Home() {
                     </Link>
                     <h2>My Projects</h2>
                     <GetRecents />
+                    <h2>My Organizations</h2>
+                    <GetOrganizations />
                     <h2>My Notebooks</h2>
                     <GetNotebooks />
                 </nav>
