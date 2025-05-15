@@ -7,7 +7,7 @@ function Dashboard() {
         <div className="row">
             <div className="block cyan-border">
                 <h1 className="h1">My Projects</h1>
-                <p>Welcome to the dashboard!</p>
+                <p>Welcome to the dashboard!</p> 
             </div>
             <div className="block cyan-border">
                 <h1 className="h1">Starred Projects</h1>

@@ -5,6 +5,9 @@
     display: grid;
     grid-template-rows: auto auto;
     gap: 1rem;
+    height: 85dvh;
+    margin: 0;
+    position: relative;
     
     .row {
         display: grid;
@@ -15,13 +18,14 @@
     .block {
         background-color: #0e1214d5;
         padding: 20px 30px;
+
     }
 
     .right-box {
         display: grid;
         grid-template-rows: auto auto;
         gap: 1rem;
-        max-width: 500px;
+        max-width: 30dvw;
     }
 
     .seventy-auto-bento-columm {
