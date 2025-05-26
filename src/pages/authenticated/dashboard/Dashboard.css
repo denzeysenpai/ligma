@@ -19,6 +19,102 @@
         background-color: #0e1214d5;
         padding: 20px 30px;
 
+        .projects-holder {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, auto);
+            /* gap: 1rem; */
+        
+            margin: 2rem 0 0 0;
+            width: 100%;
+            height: 90%;
+            /* border: 1px solid var(--faded-gray); */
+
+            .link {
+                color: var(--light-gray);
+                text-decoration: none;
+                font-weight: 500;
+                transition: var(--quick);
+                border: 2px solid transparent;
+                background-color: rgba(0, 0, 0, 0.316);
+                width: 380px;
+                padding: 20px;
+                border-radius: var(--round-xsmall);
+                opacity: 0.8;
+
+                .top-div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: center;
+                    margin-bottom: 3rem;
+                    .h2 {
+                        font-size: 1.5rem;
+                        font-family: var(--heading-font);
+                        margin: 0;
+                        padding: 0;
+                        width: fit-content;
+                    }
+                    .organization {
+                        font-size: 1.2rem;
+                        font-family: var(--heading-font);
+                        margin: 0;
+                        padding: 0;
+                        width: fit-content;
+                    }
+                }
+
+                .bottom-div {
+                    display: flex;
+                    flex-direction: row;
+                    /* justify-content: space-between; */
+                    width: 100%;    
+                    height: fit-content;       
+
+                    .bottom-info {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;           
+                        height: fit-content;       
+                        
+                        .members-count {
+                            font-size: 1.2rem;
+                            font-family: var(--heading-font);
+                            margin: 0;
+                            padding: 0;
+                            width: fit-content;
+                            display: flex;
+                            height: fit-content; 
+                            
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                margin: auto;
+                            }
+                            p {
+                                font-size: 0.9rem;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
+                        .last-updated {
+                            font-size: 0.6rem;
+                            font-family: var(--heading-font);
+                            margin: auto 0px auto auto;
+                            padding: 0;
+                            width: fit-content;
+                        }
+                    }
+                             
+                }
+    
+                &:hover {
+                    /* color: var(--cyan); */
+                border: 2px solid var(--light-gray);
+            }
+            }
+        }
+
     }
 
     .right-box {

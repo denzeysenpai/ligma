@@ -57,6 +57,7 @@ function GetOrganizations() {
     ))
 }
 
+
 function GetNotebooks() {
     return notebooks.map((recent) => (  
         <Link to={`/authenticated/notebook?id=${recent.id}`} className="link">
