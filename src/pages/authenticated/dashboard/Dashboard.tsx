@@ -1,6 +1,7 @@
 import "./Dashboard.css"
 import { Link } from "react-router-dom";
 import user_img from "../../../lib/assets/common/user.png";
+import { FetchImage, FetchThemeColor } from "../../../lib/utils/themes";
 
 const sample_projects = [
     {
@@ -10,6 +11,7 @@ const sample_projects = [
         membersCount: 5,
         lastUpdated: "2025-10-01 14:21:15",
         id: "1",
+        themeId: "japanese-theme-1.vue-green",
     },
     {
         name: "Toilet Rating App",
@@ -18,8 +20,10 @@ const sample_projects = [
         membersCount: 2,
         lastUpdated: "2025-10-02 15:01:05",
         id: "2",
+        themeId: "japanese-theme-2.ocean-blue",
     },
 ]
+
 function GetProjects() {
     return sample_projects.map((recent) => (
         <Link to={`/authenticated/project?id=${recent.id}`} style={{ textDecoration: "none", width: "fit-content", height: "fit-content" }} className="project-link">
@@ -40,6 +44,9 @@ function GetProjects() {
                     <span className="last-updated">Last Updated: {recent.lastUpdated}</span>
                 </div>
             </div>
+            <span className="vignette"></span>
+            <span className={"color-theme " + FetchThemeColor(recent.themeId)}></span>
+            <img src={FetchImage(recent.themeId)} alt="" className="background" draggable="false"/>
             </button>
         </Link>
     ))

@@ -28,8 +28,10 @@
             width: 100%;
             height: 90%;
             /* border: 1px solid var(--faded-gray); */
-
+            
             .link {
+                position: relative;
+                overflow: hidden;
                 color: var(--light-gray);
                 text-decoration: none;
                 font-weight: 500;
@@ -39,7 +41,41 @@
                 width: 380px;
                 padding: 20px;
                 border-radius: var(--round-xsmall);
-                opacity: 0.8;
+                opacity: 1;
+                cursor: pointer;
+
+                .vignette {
+                    position: absolute;
+                    inset: 0;
+                    width: 380px;
+                    z-index: 6;
+                    display: block;
+                    content: "";
+                    background-image: radial-gradient( rgba(0, 0, 0, 0.049), rgba(0, 0, 0, 0.813));
+                    background-position: left;
+                    transform: scale(1.2);
+                    overflow: hidden;
+                }
+                
+                
+                .color-theme {
+                    position: absolute;
+                    inset: 0;
+                    height: 380px;
+                    width: 600px;
+                    z-index: 5;
+                    display: block;
+                    content: "";
+                    
+                    &.green {
+                        opacity: 0.8;
+                        background-image: linear-gradient(to left, rgba(0, 197, 122, 0.759),rgba(0, 197, 181, 0.685),rgba(4, 238, 218, 0.29));
+                    }
+                    &.ocean-blue {
+                        opacity: 0.8;
+                        background-image: linear-gradient(to right, rgba(0, 136, 255, 0.767), rgba(44, 79, 185, 0.578), rgba(35, 52, 118, 0.405));
+                    }
+                }
 
                 .top-div {
                     display: flex;
@@ -47,16 +83,20 @@
                     align-items: left;
                     justify-content: center;
                     margin-bottom: 3rem;
+                    z-index: 10;
+                    position: relative;
                     .h2 {
                         font-size: 1.5rem;
                         font-family: var(--heading-font);
                         margin: 0;
                         padding: 0;
                         width: fit-content;
+                        text-shadow: var(--shadow-m-offset);
                     }
                     .organization {
                         font-size: 1.2rem;
                         font-family: var(--heading-font);
+                        text-shadow: var(--shadow-m-offset);
                         margin: 0;
                         padding: 0;
                         width: fit-content;
@@ -69,7 +109,8 @@
                     /* justify-content: space-between; */
                     width: 100%;    
                     height: fit-content;       
-
+                    z-index: 10;
+                    position: relative;
                     .bottom-info {
                         display: flex;
                         flex-direction: row;
@@ -110,8 +151,17 @@
     
                 &:hover {
                     /* color: var(--cyan); */
-                border: 2px solid var(--light-gray);
-            }
+                    border: 2px solid var(--light-gray);
+                }
+
+                .background {
+                    z-index: 0;
+                    position: absolute;
+                    inset: 0;
+                    opacity: 0.6;
+                    object-fit: cover;
+                    width: 380px;
+                }
             }
         }
 
