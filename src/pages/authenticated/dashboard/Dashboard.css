@@ -13,21 +13,36 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 1rem;
+
+
     }
 
     .block {
         background-color: #0e1214d5;
         padding: 20px 30px;
+        height: fit-content;
+        max-width: calc(38dvw + 2px + 1rem);
+        width: 80dvw;
+
+        /* &.top {
+            min-width: 50%;
+            width: auto;
+        } */
 
         .projects-holder {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, auto);
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            
             /* gap: 1rem; */
         
             margin: 2rem 0 0 0;
             width: 100%;
-            height: 90%;
-            /* border: 1px solid var(--faded-gray); */
+            height: fit-content;
+            max-width: calc(8px + 38dvw + 2px + 1rem);
+            border: 1px solid var(--faded-gray);
+            border-radius: var(--round-xsmall);
+            overflow: hidden;
             
             .link {
                 position: relative;
@@ -38,7 +53,7 @@
                 transition: var(--quick);
                 border: 2px solid transparent;
                 background-color: rgba(0, 0, 0, 0.316);
-                width: 380px;
+                width: 19dvw;
                 padding: 20px;
                 border-radius: var(--round-xsmall);
                 opacity: 1;
@@ -47,7 +62,7 @@
                 .vignette {
                     position: absolute;
                     inset: 0;
-                    width: 380px;
+                    width: inherit;
                     z-index: 6;
                     display: block;
                     content: "";
@@ -62,7 +77,7 @@
                     position: absolute;
                     inset: 0;
                     height: 380px;
-                    width: 600px;
+                    width: inherit;
                     z-index: 5;
                     display: block;
                     content: "";
@@ -82,7 +97,7 @@
                     flex-direction: column;
                     align-items: left;
                     justify-content: center;
-                    margin-bottom: 3rem;
+                    margin-bottom: 2rem;
                     z-index: 10;
                     position: relative;
                     .h2 {
@@ -160,7 +175,7 @@
                     inset: 0;
                     opacity: 0.6;
                     object-fit: cover;
-                    width: 380px;
+                    width: inherit;
                 }
             }
         }
