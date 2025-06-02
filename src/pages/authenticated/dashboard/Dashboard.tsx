@@ -70,37 +70,44 @@ function GetProjects() {
     ))
 }
 function Dashboard() {
+    const has_my_projects = !true
+    const has_starred_projects = !true
+    const has_recent_projects = !true
+    // const has_upcoming_events = true
+    // const has_updates = true 
+
+    // has everything
+    if (has_my_projects && has_starred_projects && has_recent_projects) {
+        return <></>
+    } 
+
+
+    // no owned pojects but has starred and has visited other projects
+    if (!has_my_projects && has_starred_projects && has_recent_projects) {
+        return <></>
+    } 
+
+
+    // has personal projects, no starred and has visited projects
+    if (has_my_projects && !has_starred_projects && has_recent_projects) {
+        return <></>
+    } 
+
+
+    // user visited a project but has no starred and has no personal projects
+    if (!has_my_projects && !has_starred_projects && has_recent_projects) {
+        return <></>
+    } 
+
+    // no anything at all
     return (
-        <div className="dashboard-page fade-in-animation">
-            <div className="row">
-                <div className="block cyan-border top">
-                    <h1 className="h1">My Projects</h1>
-                    <div className="projects-holder">
-                        {GetProjects()}
-                    </div>
-                </div>
-                <div className="block cyan-border top">
-                    <h1 className="h1">Starred Projects</h1>
-                    <div className="projects-holder">
-                        {GetProjects()}
-                    </div>
-                </div>
-            </div>
-            <div className="row seventy-auto-bento-columm">
-                <div className="block cyan-border">
-                    <h1 className="h1">Recent Projects</h1>
-                    <p>Here are your projects:</p>
-                </div>
-                <div className="right-box">
-                    <div className="block cyan-border">
-                        <h1 className="h1">Updates</h1>
-                        <p>Here are your projects:</p>
-                    </div>
-                    <div className="block cyan-border">
-                        <h1 className="h1">Upcoming Events</h1>
-                        <p>Here are your projects:</p>
-                    </div>
-                </div>
+        <div className="dashboard-page no-content fade-in-animation">
+            <div className="content">
+                <img src="" alt="" />
+                <h1>Pretty spacious in here...</h1>
+                <p>What would you like to do?</p>
+                <button>New Project</button>
+                <button id="org">New Organization</button>
             </div>
         </div>
     );

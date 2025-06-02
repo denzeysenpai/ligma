@@ -1,3 +1,5 @@
+/* 
+
 
 
 
@@ -24,17 +26,17 @@
         max-width: calc(38dvw + 2px + 1rem);
         width: 80dvw;
 
-        /* &.top {
+        &.top {
             min-width: 50%;
             width: auto;
-        } */
+        }
 
         .projects-holder {
             display: flex;
             flex-wrap: nowrap;
             gap: 1rem;
             
-            /* gap: 1rem; */
+            gap: 1rem;
         
             margin: 2rem 0 0 0;
             width: 100%;
@@ -121,7 +123,7 @@
                 .bottom-div {
                     display: flex;
                     flex-direction: row;
-                    /* justify-content: space-between; */
+                    justify-content: space-between;
                     width: 100%;    
                     height: fit-content;       
                     z-index: 10;
@@ -165,7 +167,7 @@
                 }
     
                 &:hover {
-                    /* color: var(--cyan); */
+                    color: var(--cyan);
                     border: 2px solid var(--light-gray);
                 }
 
@@ -194,5 +196,52 @@
         grid-template-columns: 70% auto;
         gap: 1rem;
     }
+} */
 
+
+
+.dashboard-page {
+    background-color: var(--dark-gray);
+    opacity: 0.9;
+    display: flex;
+    height: calc(100% - 140px);
+    margin: 0 0 auto 0;
+    top: 0;
+    position: relative;
+    border-radius: var(--round-small);
+    padding: 20px;
+    width: calc(100% - 40px);
+    justify-content: center;
+
+    &.no-content {
+        .content {
+            margin: auto;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            button {
+                width: 320px;
+                padding: 18px;
+                font-size: var(--font-size-2000);
+                margin: 2px auto;
+                cursor: pointer;
+                color: var(--dark-gray);
+                border-radius: var(--round-xsmall);
+                border: 2px solid var(--light-cyan);
+                background-color: var(--light-cyan);
+                transition: var(--quick);
+                
+                &#org {
+                    background-color: var(--cyan);
+                    border: 2px solid var(--cyan);
+                }
+
+                &:hover {
+                    filter: brightness(0.85);
+                }
+            }
+        }
+    }
 }
