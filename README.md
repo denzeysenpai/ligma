@@ -51,4 +51,14 @@ export default tseslint.config({
     ...reactDom.configs.recommended.rules,
   },
 })
+
 ```
+
+
+# About the Project
+
+This project's main purpose is to allow small teams (Like students working on a project) that are new to software development be familliar of how a work environment works, using Jira or Trello for work (or any other workflow management software).
+
+# Ligma
+
+What is ligma? Nobody actually knows, but in this case, it is a simple software for keeping you up to date with updates regarding your projects! Not only that, but it also allows you to manage your projects and collaborate with people. Ligma is a system composed of a REST API, mobile app, and web application.
