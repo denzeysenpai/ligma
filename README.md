@@ -54,7 +54,6 @@ export default tseslint.config({
 
 ```
 
-
 # About the Project
 
 This project's main purpose is to allow small teams (Like students working on a project) that are new to software development be familliar of how a work environment works, using Jira or Trello for work (or any other workflow management software).
