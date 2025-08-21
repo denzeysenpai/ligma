@@ -41,7 +41,8 @@ function GetProjects() {
         height: "fit-content", 
         display: "flex", 
         margin: "0px", 
-        position: "relative" 
+        position: "relative",
+        flexDirection: "row"
     }
     return sample_projects.map((recent) => (
         <Link to={`/authenticated/project?id=${recent.id}`} style={STYLE} className="project-link">
