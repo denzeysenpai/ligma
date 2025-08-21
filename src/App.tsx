@@ -6,6 +6,7 @@ import Dashboard from "./pages/authenticated/dashboard/Dashboard";
 import Projects from "./pages/authenticated/projects/Projects";
 import Organization from "./pages/authenticated/organization/Organization";
 import Notebook from "./pages/authenticated/notebook/Notebook";
+
 function App() {
   return (
     <>
