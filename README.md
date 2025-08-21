@@ -61,3 +61,6 @@ This project's main purpose is to allow small teams (Like students working on a 
 # Ligma
 
 What is ligma? Nobody actually knows, but in this case, it is a simple software for keeping you up to date with updates regarding your projects! Not only that, but it also allows you to manage your projects and collaborate with people. Ligma is a system composed of a REST API, mobile app, and web application.
+
+
+S
