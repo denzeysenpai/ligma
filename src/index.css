@@ -91,3 +91,10 @@
     opacity: 1;
   }
 }
+
+@media print {
+  *>#no-print {
+    display: none !important;
+    visibility: hidden;
+  }
+}
